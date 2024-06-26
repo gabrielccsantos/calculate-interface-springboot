@@ -1,6 +1,6 @@
-package edu.projectcalculateinterface.calculateinterface.domain;
+package edu.projectcalculateinterface.calculateinterfacespringboot.domain;
 
-import edu.projectcalculateinterface.calculateinterface.interfaces.CalculateInterface;
+import edu.projectcalculateinterface.calculateinterfacespringboot.interfaces.CalculateInterface;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
