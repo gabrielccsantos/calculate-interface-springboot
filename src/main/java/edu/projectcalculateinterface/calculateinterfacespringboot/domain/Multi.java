@@ -1,4 +1,4 @@
-package edu.projectcalculateinterface.calculateinterface.domain;
+package edu.projectcalculateinterface.calculateinterfacespringboot.domain;
 
 import jakarta.persistence.*;
 
