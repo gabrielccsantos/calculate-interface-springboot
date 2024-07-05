@@ -2,11 +2,11 @@ package edu.projectcalculateinterface.calculateinterfacespringboot.controller;
 
 import edu.projectcalculateinterface.calculateinterfacespringboot.repositories.SubRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class SubController {
 
     @Autowired
