@@ -1,26 +1,27 @@
 package edu.projectcalculateinterface.calculateinterfacespringboot.controller;
 
-import edu.projectcalculateinterface.calculateinterfacespringboot.repositories.SumRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
+import edu.projectcalculateinterface.calculateinterfacespringboot.services.SumService;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping(value = "/sum")
 public class SumController {
 
-    @Autowired
-    private final SumRepository sumRepository;
+    private final SumService sumService;
 
-    public SumController(SumRepository sumRepository) {
-        this.sumRepository = sumRepository;
+    public SumController(SumService sumService) {
+        this.sumService = sumService;
     }
 
-    @RequestMapping(value = "/sums", method = RequestMethod.GET)
-    public String findAll(Model model){
-        model.addAttribute("sums", sumRepository.findAll());
 
-        return "sums";
+    @RequestMapping(method = RequestMethod.POST,
+            value = "/{number1}/{number2}")
+    public Double getSum(@PathVariable("number1") Double number1,
+                         @PathVariable("number2") Double number2){
+
     }
+
 }

@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SubController {
 
-    @Autowired
     private final SubRepository subRepository;
 
     public SubController(SubRepository subRepository) {
